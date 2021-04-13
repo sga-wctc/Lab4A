@@ -28,9 +28,16 @@ namespace Lab4A
         void SpaceEntered(object sender, System.EventArgs e)
         {
             var str = entryLabel.Text;
-            char newChar = Morse.MorseCoder(str);
-            str = messageLabel.Text;
-            messageLabel.Text = str + newChar + " ";
+            if (str.Length <=0)
+            {
+                str = messageLabel.Text;
+                messageLabel.Text = str + " ";
+            } else
+            {
+                char newChar = Morse.MorseCoder(str);
+                str = messageLabel.Text;
+                messageLabel.Text = str + newChar;
+            }
             entryLabel.Text = "";
 
         }

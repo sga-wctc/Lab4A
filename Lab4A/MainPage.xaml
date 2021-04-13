@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4A.MainPage">
+
+    <StackLayout>
+        <Label Text="Morse Code Exercise - Lab4A" FontAttributes="Bold" />
+        <Label Text="Your message is:" />
+        <Label x:Name="messageLabel" Text="" />
+        <Label Text="Current entry:" />
+        <Label x:Name="entryLabel" Text="" />
+        <Button Text="-" Clicked="DotEntered"/>
+        <Button Text="_" Clicked="DashEntered" />
+        <Button Text="Space" Clicked="SpaceEntered"/>
+    </StackLayout>
+
+</ContentPage>
